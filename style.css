@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Estilos gerais para a página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding-top: 60px; /* Espaço para a navbar fixa */
+}
+
+/* Estilos da navbar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 8%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Estilos da seção home */
+#home {
+    background: #f4f4f4; /* Fundo claro para a seção */
+    text-align: center; /* Centralizar o texto */
+    padding: 60px 20px; /* Espaçamento interno da seção */
+}
+
+/* Estilos do carrossel */
+.carousel {
+    position: relative;
+    max-width: 800px; /* Largura máxima do carrossel */
+    margin: 0 auto; /* Centralizar o carrossel */
+    overflow: hidden; /* Esconder partes das imagens que saem da caixa */
+}
+
+.carousel-images {
+    display: flex; /* Exibir imagens em linha */
+    transition: transform 0.5s ease-in-out; /* Transição suave ao mudar as imagens */
+}
+
+.carousel-images img {
+    width: 100%; /* Imagens ocupam toda a largura do carrossel */
+    height: auto; /* Manter a proporção das imagens */
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo preto semi-transparente */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.carousel-button.prev {
+    left: 10px; /* Botão de anterior à esquerda */
+}
+
+.carousel-button.next {
+    right: 10px; /* Botão de próximo à direita */
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Escurece o fundo ao passar o mouse */
+}
+
+/* Estilos específicos para as caixas */
+.box-container {
+    display: flex; /* Alinha as caixas horizontalmente */
+    justify-content: center; /* Centraliza as caixas horizontalmente */
+    flex-wrap: wrap; /* Permite que as caixas se movam para a linha seguinte, se necessário */
+    gap: 30px; /* Espaçamento entre as caixas */
+    
+}
+
+.box {
+    background: #fff; /* Fundo branco para contraste com a borda */
+    border: 2px solid #000; /* Borda preta de 2px */
+    border-radius: 8px; /* Borda arredondada para um toque moderno */
+    padding: 35px; /* Espaçamento interno */
+    max-width: 360px; /* Largura máxima das caixas */
+    text-align: left; /* Alinha o texto à esquerda dentro da caixa */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve para destacar a caixa */
+    max-height: 700px;
+    
+}
+
+/* Alinha o texto centralizado nos cabeçalhos e parágrafos das caixas */
+.box h1 {
+    text-align: center; /* Centraliza o texto dos títulos */
+}
+
+.box p {
+    text-align: center; /* Centraliza o texto dos parágrafos */
+}
+
+.box ul {
+    list-style-type: disc; /* Tipo de lista com marcadores */
+    margin-left: 20px; /* Margem à esquerda para a lista */
+}
+
+.box li {
+    margin-bottom: 10px; /* Margem inferior dos itens da lista */
+}
+
+.box strong {
+    font-weight: bold; /* Destaca o texto em negrito */
+}
+
+hr{
+    height: 8px ;
+    color: #000;
+    background-color: black;
+}
