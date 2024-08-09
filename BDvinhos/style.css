@@ -121,45 +121,43 @@ body {
 
 }
 
-.box {
-    background: #fff; /* Fundo branco para contraste com a borda */
-    border: 2px solid #000; /* Borda preta de 2px */
-    border-radius: 8px; /* Borda arredondada para um toque moderno */
-    padding: 35px; /* Espaçamento interno */
-    max-width: 360px; /* Largura máxima das caixas */
-    text-align: left; /* Alinha o texto à esquerda dentro da caixa */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve para destacar a caixa */
+.box1, .box2, .box3 {
+    background: #fff; 
+    border: 2px solid #000;
+    border-radius: 8px; 
+    padding: 50px; 
+    max-width: 300px; 
+    text-align: left; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     max-height: 700px;
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    text-align: center;
+    gap: 10px;
 
 }
 
-/* Alinha o texto centralizado nos cabeçalhos e parágrafos das caixas */
-.box h1 {
-    text-align: center; /* Centraliza o texto dos títulos */
+.box1:hover{
+    transition: all 200ms linear;
+    box-shadow: rgb(0, 0, 0, 0.35)0px 5px 15px;
+    cursor: pointer;
 }
 
-.box p {
-    text-align: center; /* Centraliza o texto dos parágrafos */
+.box2:hover{
+    transition: all 200ms linear;
+    box-shadow: rgb(0, 0, 0, 0.35)0px 5px 15px;
+    cursor: pointer;
 }
 
-.box ul {
-    list-style-type: disc; /* Tipo de lista com marcadores */
-    margin-left: 20px; /* Margem à esquerda para a lista */
+.box3:hover{
+    transition: all 200ms linear;
+    box-shadow: rgb(0, 0, 0, 0.35)0px 5px 15px;
+    cursor: pointer;
 }
 
-.box li {
-    margin-bottom: 10px; /* Margem inferior dos itens da lista */
-}
 
-.box strong {
-    font-weight: bold; /* Destaca o texto em negrito */
-}
 
-hr{
-    height: 8px ;
-    color: #000;
-    background-color: black;
-}
 
 .right-box-section01{
     gap: 2vh;
@@ -184,6 +182,6 @@ hr{
     
 }
 
-@media screen() {
+@media (width <= 600px) {
     
 }
